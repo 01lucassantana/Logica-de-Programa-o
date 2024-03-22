@@ -1,0 +1,30 @@
+Algoritmo "Abc 2.0"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 22/03/2024
+Var
+// Seção de Declarações das variáveis 
+
+   a, b, c, soma: inteiro
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+ escreva("Digite o valor de A: ")
+ leia (a)
+
+ escreva ("Digite o valor de B: ")
+ leia (b)
+ 
+  escreva ("Digite o valor de C: ")
+ leia (c)
+ 
+ 
+ soma:=a+b
+ 
+ se soma < c entao
+ escreva ("Soma de A e B eh menor de C, A soma de a+B eh ", soma)
+ senao
+ escreva ("Soma de A e B eh maior de C, A soma de a+B eh ", soma)
+ fimse
+Fimalgoritmo
