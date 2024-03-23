@@ -51,16 +51,18 @@ Inicio
 
           //teste para saber o numero medio
           
-           Se (a<maior) e (a>menor) entao
+           Se ((a<b) e (a>c)) ou ((a>b) e (a<c)) entao
             meio:=a
            senao
-                se (b<maior) e (b>menor) entao
+
+                se((b<a) e (b>c)) ou ((b>a) e (b<c)) entao
+                meio:=b
                  senao meio:=c
                 fimse
                 
            fimse
      fimse
-      escreva(maior,meio,menor)
+      escreva(maior, meio, menor)
 
 
 
