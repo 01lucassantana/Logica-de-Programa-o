@@ -1,0 +1,69 @@
+Algoritmo "maior menor medio"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 22/03/2024
+Var
+// Seção de Declarações das variáveis 
+
+   a, b, c: inteiro
+   menor, meio, maior: inteiro
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+   Escreva ("Digite um numero para A: ")
+    Leia (a)
+
+   Escreva ("Digite um numero para B: ")
+    Leia (b)
+    
+   Escreva ("Digite um numero para C: ")
+     Leia (c)
+
+//teste para garantir que os tres numeros não são iguais
+    se (a=b) ou (b=c) ou (a=c) entao
+       escreva ("os numero devem ser diferentes")
+    senao
+       //teste para saber o maior numero
+
+          Se (a>b) e (a>c) entao
+            maior:=a
+          senao
+            Se (b>a) e (b>c) entao
+               maior:=b
+            senao
+                 maior:=c
+
+              fimse
+           fimse
+
+      //teste para saber o menor numero
+
+          Se (a<b) e (a<c) entao
+            menor:=a
+            senao
+              Se (b<a) e (b<c) entao
+                 menor:=b
+              senao
+                 menor:=c
+              fimse
+          fimse
+
+          //teste para saber o numero medio
+          
+           Se (a<maior) e (a>menor) entao
+            meio:=a
+           senao
+                se (b<maior) e (b>menor) entao
+                 senao meio:=c
+                fimse
+                
+           fimse
+     fimse
+      escreva(maior,meio,menor)
+
+
+
+
+
+fimalgoritmo
